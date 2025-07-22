@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #7e57c2, #9575cd, #b39ddb, #d1c4e9);
+    background-size: 400% 400%;
+    animation: gradientSlide 20s ease infinite;
+    color: white;
+}
+
+@keyframes gradientSlide {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+input:focus {
+    outline: 2px solid #9575cd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #9575cd;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7e57c2;
+}
+
+.error {
+    background-color: #ff4444;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.login-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.login-link a {
+    color: #d1c4e9;
+    text-decoration: underline;
+}
